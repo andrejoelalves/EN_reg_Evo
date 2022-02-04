@@ -336,7 +336,7 @@ L.Control.zoomHome = L.Control.extend({
 
 				var legendContainer = L.DomUtil.create("div", "legend");  
 				var symbolsContainer = L.DomUtil.create("div", "symbolsContainer");
-				var classes = [roundNumber(1000), roundNumber(50000), roundNumber(100000),roundNumber(250000), roundNumber(500000)];
+				var classes = [roundNumber(1000), roundNumber(50000), roundNumber(250000),roundNumber(500000), roundNumber(1000000)];
 				console.log(min);
 				console.log(max);				
 				var legendCircle;  
@@ -348,7 +348,7 @@ L.Control.zoomHome = L.Control.extend({
 			L.DomEvent.stopPropagation(e); 
 		});  
 
-		$(legendContainer).append('<FONT SIZE=2 style = "font-family:verdana"><b>Number of confirmed <br> <br>cases</b> <br> <br> </font>  <FONT SIZE=1 style = "font-family:verdana"> Data source: <a href="https://covid19.min-saude.pt/relatorio-de-situacao/" target="_blank">DGS</a> <br> <br> </font>');
+		$(legendContainer).append('<FONT SIZE=2 style = "font-family:verdana"><b>Number of confirmed &nbsp&nbsp<br> <br>cases</b> &nbsp <br> <br> </font>  <FONT SIZE=1 style = "font-family:verdana"> Data source: <a href="https://covid19.min-saude.pt/relatorio-de-situacao/" target="_blank">DGS</a> <br> <br> </font>');
 		
 		for (var i = 0; i <= classes.length-1; i++) {  
 
